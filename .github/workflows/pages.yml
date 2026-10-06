@@ -26,7 +26,7 @@ jobs:
       - name: Unpack static site
         run: |
           mkdir -p _site
-          unzip -q termoaed-static-ready.zip -d _site
+          unzip -oq termoaed-static-ready.zip -d _site
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload Pages artifact
